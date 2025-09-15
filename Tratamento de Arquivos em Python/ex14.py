@@ -7,14 +7,6 @@ arquivo_saida = input("Digite o nome do arquivo de saída: ")
 with open(arquivo_entrada, "r") as entrada:
     linhas = entrada.readlines()
 with open(arquivo_saida, "w") as saida:
-    linha_anterior_vazia = False
-    for linha in linhas:
-        linha = ' '.join(linha.split())
-        if linha == '':
-            if not linha_anterior_vazia:
-                saida.write('\n')
-                linha_anterior_vazia = True
-        else:
-            saida.write(linha + '\n')
-            linha_anterior_vazia = False
+    resultado = ''.join(linha.strip().replace(" ", "") for linha in linhas if linha.strip() != '')
+    saida.write(resultado)
 print(f"Arquivo '{arquivo_saida}' criado com sucesso, eliminando espaços repetidos.")
