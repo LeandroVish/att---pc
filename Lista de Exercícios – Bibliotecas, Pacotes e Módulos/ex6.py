@@ -1,0 +1,1 @@
+# 6. Escreva um programa que importe o pacote numpy e crie uma matriz de zeros com dimensões 3x3.
