@@ -1,0 +1,1 @@
+# 10. Importe a biblioteca pandas, leia um arquivo CSV (por exemplo, "dados.csv") e exiba as primeiras linhas do DataFrame.
